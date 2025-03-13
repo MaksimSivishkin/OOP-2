@@ -1,26 +1,13 @@
 public class Start {
     public static void main(String[] args) {
-        Point point = new Point(1,5);
-        Point point1 = new Point(2,8);
-        Point point2 = new Point(5,3);
-        Point point3 = new Point(8,9);
+        Fraction fraction = new Fraction(1,3);
+        Fraction fraction1 = new Fraction(2,5);
+        Fraction fraction2 = new Fraction(7,8);
+        Fraction fraction3 = new Fraction(5,1);
+        Fraction fraction4 = Fraction.sum(fraction,fraction1);
+        Fraction fraction5 = Fraction.sum(fraction2,fraction4);
+        Fraction fraction6 = Fraction.min(fraction5,fraction3);
 
-        Line line = new Line(point, point1);
-        Line line1 = new Line(point1, point2);
-        Line line2 = new Line(point2, point3);
-
-        PolyLine polyLine = new PolyLine();
-        polyLine.addPolyLine(line);
-        polyLine.addPolyLine(line1);
-        polyLine.addPolyLine(line2);
-        double x=polyLine.sumPolyLine();
-        double y= line.getLine()+ line1.getLine()+ line2.getLine();
-
-        System.out.println(polyLine.sumPolyLine());
-        System.out.println(polyLine);
-        System.out.println(polyLine.listPolyLine());
-        point1.setX(12);
-        System.out.println(polyLine);
-        System.out.println(x==y);
+        System.out.println(fraction6);
     }
 }
