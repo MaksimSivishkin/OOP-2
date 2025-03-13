@@ -2,9 +2,9 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-/src/main/java/Line
-/src/main/java/Point
-/src/main/java/PolyLine
+/src/main/java/Line.java
+/src/main/java/Point.java
+/src/main/java/PolyLine.java
 
 
 ### IntelliJ IDEA ###
